@@ -1,7 +1,7 @@
 class Cook < Formula
   desc "CLI tool for CookLang Recipe Markup Language"
   homepage "https://cooklang.org"
-  url "https://github.com/cooklang/CookCLI.git", tag: "v0.0.8"
+  url "https://github.com/cooklang/CookCLI.git", tag: "v0.0.9"
   license "MIT"
 
   head "https://github.com/cooklang/CookCLI.git", branch: "main"
