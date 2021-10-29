@@ -11,7 +11,7 @@ class Cook < Formula
   patch :DATA
 
   def install
-    system "make", "prepare", "build_macos"
+    system "make", "build_macos"
     bin.install ".build/#{ENV["HOMEBREW_PROCESSOR"]}-apple-macosx/release/cook"
   end
 
