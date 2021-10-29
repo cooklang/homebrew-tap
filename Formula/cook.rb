@@ -4,6 +4,8 @@ class Cook < Formula
   url "https://github.com/cooklang/CookCLI.git", tag: "v0.0.8"
   license "MIT"
 
+  head "https://github.com/cooklang/CookCLI.git", branch: "main"
+
   depends_on xcode: ["10.0", :build]
 
   patch :DATA
