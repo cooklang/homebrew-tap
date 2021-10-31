@@ -1,17 +1,18 @@
 class Cook < Formula
-  desc ""
-  homepage ""
-  url "https://github.com/cooklang/CookCLI.git", tag: "v0.0.8"
-  version "0.0.8"
+  desc "CLI tool for CookLang Recipe Markup Language"
+  homepage "https://cooklang.org"
+  url "https://github.com/cooklang/CookCLI.git", tag: "v0.0.9"
   license "MIT"
+
+  head "https://github.com/cooklang/CookCLI.git", branch: "main"
 
   depends_on xcode: ["10.0", :build]
 
   patch :DATA
 
   def install
-    system "make", "prepare", "build_macos"
-    bin.install ".build/#{ENV['HOMEBREW_PROCESSOR']}-apple-macosx/release/cook"
+    system "make", "build_macos"
+    bin.install ".build/#{ENV["HOMEBREW_PROCESSOR"]}-apple-macosx/release/cook"
   end
 
   test { system "#{bin}/cook", "version" }
