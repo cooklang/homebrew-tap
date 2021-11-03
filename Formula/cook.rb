@@ -8,8 +8,6 @@ class Cook < Formula
 
   depends_on xcode: ["10.0", :build]
 
-  patch :DATA
-
   def install
     system "swift", "build", "--configuration", "release", "--disable-sandbox", "--arch", "arm64", "--arch", "x86_64"
     bin.install ".build/apple/Products/Release/cook"
