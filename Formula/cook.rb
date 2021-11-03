@@ -1,4 +1,5 @@
 class Cook < Formula
+
   desc "CLI tool for CookLang Recipe Markup Language"
   homepage "https://cooklang.org"
   url "https://github.com/cooklang/CookCLI.git", tag: "v0.0.11"
