@@ -7,8 +7,8 @@ class Cook < Formula
   head "https://github.com/cooklang/CookCLI.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/cooklang/homebrew-tap/releases/download/cook-0.0.12"
-    sha256 cellar: :any_skip_relocation, catalina: "a1c166bff5d4cf0c9e4b4cdf9882296caaaa4d46dd04f993012381389f3173ed"
+    root_url "https://github.com/cooklang/homebrew-tap/releases/download/cook-0.0.13"
+    sha256 cellar: :any_skip_relocation, catalina: "c70988b0d8ee784c56987e31235fb67157b84f4d623e036e658014af2d5c3ec3"
   end
 
   depends_on xcode: ["10.0", :build]
