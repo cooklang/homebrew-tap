@@ -8,7 +8,7 @@ class Cook < Formula
 
   bottle do
     root_url "https://github.com/cooklang/homebrew-tap/releases/download/cook-0.1.3"
-    sha256 cellar: :any_skip_relocation, catalina: "95c155f2595695ff2a4e83f754ef5317e3d1912161d29aa557b4cfb526ca8b93"
+    sha256 cellar: :any_skip_relocation, catalina: "6197598d758ab4d84849ae985248c92602b70a428fa64835c1281b9aef7f26e6"
   end
 
   depends_on xcode: ["10.0", :build]
