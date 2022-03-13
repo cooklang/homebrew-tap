@@ -1,13 +1,13 @@
 class Cook < Formula
   desc "CLI tool for CookLang Recipe Markup Language"
   homepage "https://cooklang.org"
-  url "https://github.com/cooklang/CookCLI.git", tag: "v0.1.3"
+  url "https://github.com/cooklang/CookCLI.git", tag: "v0.1.4"
   license "MIT"
 
   head "https://github.com/cooklang/CookCLI.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/cooklang/homebrew-tap/releases/download/cook-0.1.3"
+    root_url "https://github.com/cooklang/homebrew-tap/releases/download/cook-0.1.4"
     sha256 cellar: :any_skip_relocation, catalina: "6197598d758ab4d84849ae985248c92602b70a428fa64835c1281b9aef7f26e6"
   end
 
