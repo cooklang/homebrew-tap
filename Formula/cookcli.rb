@@ -5,12 +5,14 @@ class Cookcli < Formula
   sha256 "050fcbd7f8f938bd6ffc898a403795101807cfa6d76c787e991c8d90031405c6"
   license "MIT"
 
-  depends_on "npm" => :build
+  depends_on "node" => :build
   depends_on "rust" => :build
 
   def install
     cd "ui" do
-      system "npm", "install" # rubocop:disable Style/DisableCopsWithinSourceCodeDirective FormulaAudit/StdNpmArgs
+      # rubocop:disable FormulaAudit/StdNpmArgs
+      system "npm", "install" # rubocop:disable FormulaAudit/StdNpmArgs
+      # rubocop:enable FormulaAudit/StdNpmArgs
       system "npm", "run", "build"
     end
     system "cargo", "install", *std_cargo_args
