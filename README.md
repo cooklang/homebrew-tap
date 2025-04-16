@@ -2,5 +2,5 @@
 
 ```
 brew tap cooklang/tap
-brew install cooklang/tap/cook
+brew install cooklang/tap/cookcli
 ```
