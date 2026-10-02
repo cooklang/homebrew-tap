@@ -5,6 +5,8 @@ class Cookcli < Formula
   sha256 "6832191a18e4e4a2d9f5e3227631b7c598d239f01f0560bc226cc3ef3948194b"
   license "MIT"
 
+  deprecate! date: "2026-10-02", because: "is outdated; use `brew install cookcli` from Homebrew core"
+
   depends_on "node" => :build
   depends_on "rust" => :build
 
